@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <style>
+    ::root{
+      font-family: 'Akaya Kanadaka', cursive;
+    }
+  #reset{
+    display: none;
+  }
+  .form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+    box-shadow: 0 0 10px 0rem rgb(0 183 74 / 18%)!important;
+}
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+    box-shadow: 0 0 10px 0rem rgb(249 49 84 / 18%)!important;
+}
+</style>
+<link rel="shortcut icon" href="https://hawkerrz.com/wp-content/uploads/2020/09/Favicon-new-100x100.png" type="image/x-icon">
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css"
+  rel="stylesheet"
+/>
+</head>
+<body class="container">
+<h1 id="datatest" class="m-5 p-2 text-center border border-danger text-danger rounded">Single App</h1>
+<h4 class="text-center text-success rounded"> Current Time is : <span class="badge bg-success" id="time"></span></h4>
+  <form class="row m-5 g-3 needs-validation" novalidate>
+    <div class="col-md-6">
+      <div class="form-outline">
+      <input type="text" class="form-control bfname"  minlength="2" id="validationCustom01" required>
+      
+      <label for="validationCustom01" class="form-label">BF name</label>
+      <i class="fas fa-exclamation-circle fs-5 trailing mt-0 invalid-feedback"></i>
+      <i class="fas fa-check-circle fs-5 trailing mt-0 valid-feedback" style="width: 20px;"></i>
+        <div class="invalid-feedback">
+          Add your BF name
+        </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-outline">
+      <input type="text" class="form-control gfname" id="validationCustom02" required>
+      <i class="fas fa-exclamation-circle fs-5 trailing mt-0 invalid-feedback"></i>
+      <i class="fas fa-check-circle fs-5 trailing mt-0 valid-feedback" style="width: 20px;"></i>
+      <label for="validationCustom02" class="form-label">GF name</label>
+      <div class="invalid-feedback">
+        Add your GF name
+      </div>
+    </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-outline">
+      <input type="number" class="form-control getrange" id="validationCustom02" min="1" max="2000" data-mdb-show-counter="true" required>
+      <i class="fas fa-exclamation-circle fs-5 trailing mt-0 invalid-feedback"></i>
+      <i class="fas fa-check-circle fs-5 trailing mt-0 valid-feedback" style="width: 20px;"></i>
+      <label for="validationCustom02" class="form-label">Add Range</label>
+      <div class="invalid-feedback">
+        Add a valid number upto 0 and less then 2000.
+      </div>
+    </div>
+    </div>
+    <div id="dataall" class="col-12 d-grid gap-2">
+      <a class="btn btn-primary" id="submit" href="#">Submit</a>
+     <a class="btn btn-danger reset" id="reset" href="#">Clear all</a> 
+    </div>
+  </form>
+
+<div class="row">
+
+  <div class="col-md-6">
+    <ol class="m-3 list-group">
+    </ol>
+  </div>
+
+  <div class="col-md-6">
+    <ol class="m-3 sec list-group">
+    </ol>
+  </div>
+</div>
+<script src="app.js"></script>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
